@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>微首页</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            background: url("../../assets/i/t-1/home.jpg") no-repeat;
+        }
+        #catalog{
+            position: absolute;
+            width: 80%;
+            height: 200px;
+            top: 50%;
+            left:50%;
+            margin-top: -100px;
+            margin-left:-40%;
+            /*border:1px solid red;*/
+        }
+        #catalog .c_item{
+            float: left;
+            width: 50%;
+            height: 50px;
+        }
+        #catalog .c_item.c_odd{
+            padding-right: 5px;
+        }
+        #catalog .c_item.c_even{
+            padding-left: 5px;
+        }
+        #catalog .c_item .c_lk{
+            display: block;
+            background: rgba(255,255,255,.5);
+            height: 80%;
+            text-align: center;
+            line-height: 40px;
+            color: #000;
+            font-size: 14px;
+            font-weight:bold;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="catalog">
+    <div class="c_item c_odd">
+        <a href="" class="c_lk ">公司简介</a>
+    </div>
+    <div class="c_item c_even">
+        <a href="" class="c_lk">公司产品</a>
+    </div>
+    <div class="c_item c_odd">
+        <a href="" class="c_lk ">新闻中心</a>
+    </div>
+    <div class="c_item c_even">
+        <a href="" class="c_lk">公司服务</a>
+    </div>
+    <div class="c_item c_odd">
+        <a href="" class="c_lk ">产品中心</a>
+    </div>
+    <div class="c_item c_even">
+        <a href="" class="c_lk">成功案例</a>
+    </div>
+    <div class="c_item c_odd">
+        <a href="" class="c_lk ">在线留言</a>
+    </div>
+    <div class="c_item c_even">
+        <a href="" class="c_lk">联系我们</a>
+    </div>
+
+</div>
+</body>
+</html>
