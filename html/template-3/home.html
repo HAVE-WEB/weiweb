@@ -32,6 +32,7 @@
 
     <!-- Amaze UI CSS -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
     <style>
         *{
@@ -45,7 +46,7 @@
             font-size: 12px;
             font-family:"微软雅黑";
             color: #666;
-            background-color:#F3F3F3 ;
+            background:url("../../assets/i/t-3/bg.jpg") no-repeat center;
         }
         /*start top*/
         #top .t_img{
@@ -71,6 +72,7 @@
             width: 33%;
             float: left;
             padding: 5px;
+            margin-top: 50px;
         }
         #catalog .c_item .c_lk{
             display: block;
@@ -98,14 +100,29 @@
     </style>
 </head>
 <body>
-<div id="top">
-    <img src="../../assets/i/t-3/top.jpg" alt="" class="t_img">
-</div>
+<!--<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false}' >-->
+    <!--<ul class="am-slides">-->
+        <!--<li>-->
+            <!--<img src="../../assets/i/t-3/home-slider/1.png">-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<img src="../../assets/i/t-3/home-slider/2.png">-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<img src="../../assets/i/t-3/home-slider/3.png">-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<img src="../../assets/i/t-3/home-slider/4.png">-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
 
+<!--<div id="top">-->
+    <!--<img src="../../assets/i/t-3/top.jpg" alt="" class="t_img">-->
+<!--</div>-->
 <div id="catalog" class="clearFix">
     <div class="c_item">
-        <a href="" class="c_lk ">
-
+        <a href="introduce.html" class="c_lk ">
             <span class="c_icon">
                 <img src="../../assets/i/t-3/we.png" alt="">
             </span>
@@ -115,7 +132,7 @@
         </a>
     </div>
     <div class="c_item">
-        <a href="" class="c_lk ">
+        <a href="tel:18888888888" class="c_lk ">
              <span class="c_icon">
                 <img src="../../assets/i/t-3/contact.png" alt="">
             </span>
@@ -125,7 +142,7 @@
         </a>
     </div>
     <div class="c_item">
-        <a href="" class="c_lk ">
+        <a href="news.html" class="c_lk ">
              <span class="c_icon">
                 <img src="../../assets/i/t-3/list.png" alt="">
             </span>
@@ -136,7 +153,7 @@
         </a>
     </div>
     <div class="c_item">
-        <a href="" class="c_lk ">
+        <a href="service.html" class="c_lk ">
              <span class="c_icon">
                 <img src="../../assets/i/t-3/service.png" alt="">
             </span>
@@ -147,7 +164,7 @@
         </a>
     </div>
     <div class="c_item">
-        <a href="" class="c_lk ">
+        <a href="product.html" class="c_lk ">
             <span class="c_icon">
                 <img src="../../assets/i/t-3/product.png" alt="">
             </span>
@@ -158,40 +175,7 @@
         </a>
     </div>
     <div class="c_item">
-        <a href="" class="c_lk ">
-            <span class="c_icon">
-                <img src="../../assets/i/t-3/notice.png" alt="">
-            </span>
-            <span class="c_txt">
-                公告
-            </span>
-
-        </a>
-    </div>
-    <div class="c_item">
-        <a href="" class="c_lk ">
-             <span class="c_icon">
-                <img src="../../assets/i/t-3/service.png" alt="">
-            </span>
-            <span class="c_txt">
-                公司服务
-            </span>
-
-        </a>
-    </div>
-    <div class="c_item">
-        <a href="" class="c_lk ">
-            <span class="c_icon">
-                <img src="../../assets/i/t-3/product.png" alt="">
-            </span>
-            <span class="c_txt">
-                公司产品
-            </span>
-
-        </a>
-    </div>
-    <div class="c_item">
-        <a href="" class="c_lk ">
+        <a href="notice.html" class="c_lk ">
             <span class="c_icon">
                 <img src="../../assets/i/t-3/notice.png" alt="">
             </span>
@@ -206,15 +190,11 @@
 <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
 <script>
     $(function () {
-//        超链接的高度宽度一样大
         var w = $('#catalog .c_item .c_lk').width();
         $('#catalog .c_item .c_lk').height(w);
         $('#catalog .c_item .c_lk .c_icon').css({
             'padding-top':(w-$('#catalog .c_item .c_lk .c_icon').outerHeight())/2
         })
-
-
-
     });
 
 </script>

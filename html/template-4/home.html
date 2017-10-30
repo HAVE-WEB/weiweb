@@ -1,0 +1,277 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>简洁版</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            color: #666;
+            background-color:rgba(0,0,0,.7) ;
+            height:100%;
+        }
+        /*start top*/
+        #top .t_img{
+            width:100%;
+        }
+        /*end top*/
+
+            /*清除浮动*/
+        .clearFix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: '.';
+            visibility: hidden;
+            clear: both;
+        }
+        /*start catalog*/
+        #catalog{
+            width: 100%;
+            /*height: 100%;*/
+            margin-top: 30px;
+        }
+        #catalog .c_item{
+            width: 50%;
+            float: left;
+        }
+        #catalog .c_item .c_lk{
+            display: block;
+            background-color: #F2B57E;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight:bold;
+            border:2px solid #4C4C4C;
+        }
+        #catalog .c_item .c_lk.c_1{
+            background: #058AEF;
+        }
+        #catalog .c_item .c_lk.c_2{
+            background: #53C400;
+        }
+        #catalog .c_item .c_lk.c_3{
+            background: #058AEF;
+        }
+        #catalog .c_item .c_lk .c_icon{
+        }
+        #catalog .c_item .c_lk span{
+            display: block;
+        }
+        #catalog .c_item .c_lk .c_icon img{
+            width: 23px;
+            height: 20px;
+        }
+        #catalog .c_item .c_more{
+            /*border:2px solid #fff;*/
+        }
+        #catalog .c_item .c_more .c_link{
+            display: block;
+            float: left;
+            background-color: #F2B57E;
+            /*height: 100%;*/
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            font-weight:bold;
+            border:2px solid #4C4C4C;
+        }
+        #catalog .c_item .c_more .c_link.c_1{
+            height:50%;
+            width:50%;
+            background: #E70103;
+        }
+        #catalog .c_item .c_more .c_link.c_2{
+            width:50%;
+            height:50%;
+            background: #F2D10A;
+        }
+        #catalog .c_item .c_more .c_link.c_3{
+            width:100%;
+            height:50%;
+            background: #55C300;
+        }
+        #catalog .c_item .c_more .c_link span{
+            display: block;
+        }
+        #catalog .c_item .c_more .c_link .c_icon img{
+            width: 23px;
+            height: 20px;
+        }
+        /*end catalog*/
+        /*start support*/
+        .support{
+            text-align:center;
+            margin-top: 10px;
+        }
+        /*end support*/
+    </style>
+</head>
+<body>
+<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false}' id="slider">
+    <ul class="am-slides">
+        <li>
+            <img src="../../assets/i/t-4/home-slider/1.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-4/home-slider/2.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-4/home-slider/3.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-4/home-slider/4.jpg">
+        </li>
+    </ul>
+</div>
+<!--start catalog-->
+<div id="catalog" class="clearFix">
+    <div class="c_item">
+        <a href="introduce.html" class="c_lk c_1">
+            <div class="c_center">
+                <span class="c_icon">
+                    <img src="../../assets/i/t-4/we.png" alt="">
+                </span>
+                <span class="c_txt">
+                    关于我们
+                </span>
+            </div>
+        </a>
+    </div>
+    <div class="c_item">
+        <div class="c_more">
+            <a href="product.html" class="c_link  c_1">
+                <div class="c_center">
+                    <span class="c_icon">
+                        <img src="../../assets/i/t-4/product.png" alt="">
+                    </span>
+                        <span class="c_txt">
+                        公司产品
+                    </span>
+                </div>
+            </a>
+
+            <a href="notice.html" class="c_link  c_2">
+                <div class="c_center">
+                    <span class="c_icon">
+                        <img src="../../assets/i/t-4/notice.png" alt="">
+                    </span>
+                        <span class="c_txt">
+                        公告
+                    </span>
+                </div>
+            </a>
+
+            <a href="tel:18888888888" class="c_link c_3">
+                <div class="c_center">
+                     <span class="c_icon">
+                        <img src="../../assets/i/t-4/contact.png" alt="">
+                    </span>
+                    <span class="c_txt">
+                        联系我们
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="c_item">
+        <a href="news.html" class="c_lk c_2">
+            <div class="c_center">
+                 <span class="c_icon">
+                    <img src="../../assets/i/t-4/list.png" alt="">
+                </span>
+                <span class="c_txt">
+                    新闻列表
+                </span>
+            </div>
+        </a>
+    </div>
+    <div class="c_item">
+        <a href="service.html" class="c_lk c_3">
+            <div class="c_center">
+                 <span class="c_icon">
+                <img src="../../assets/i/t-4/service.png" alt="">
+                </span>
+                    <span class="c_txt">
+                    公司服务
+                </span>
+            </div>
+
+        </a>
+    </div>
+</div>
+<!--end catalog-->
+<!--start support-->
+<div class="support">
+    技术支持：<a href="" class="s_lk">上海玖达</a>
+</div>
+<!--end support-->
+</body>
+<script>
+    $(function () {
+
+        var w = $('#catalog .c_item .c_lk').width();
+        $('#catalog .c_item .c_lk').height(w);
+        $('#catalog .c_item .c_lk .c_center').css({
+            'padding-top':(w-$('#catalog .c_item .c_lk .c_center').outerHeight())/2
+        });
+
+        var dw = $('#catalog .c_item .c_more').outerWidth();
+        $('#catalog .c_item .c_more').outerHeight(dw);
+        var ih = $('#catalog .c_item .c_more .c_link').height();
+        $('#catalog .c_item .c_more .c_link .c_center').css({
+            'padding-top':(ih- $('#catalog .c_item .c_more .c_link .c_center').outerHeight())/2
+        })
+
+//        var ph = screen.height;
+//        var ch = $('#catalog').outerHeight();
+//        var sliderH = $('#slider').outerHeight();
+//        console.log("ph:"+ph+"，ch:"+ch+",sliderH:"+sliderH);
+////        $('#catalog').css({
+////            'margin-top':(ph-ch-sh)/2
+////        })
+
+
+    });
+</script>
+</html>

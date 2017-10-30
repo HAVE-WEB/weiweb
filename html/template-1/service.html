@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>服务内容</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            height: 100%;
+        }
+        /*start navigation*/
+        #navigation{
+            height: 40px;
+            background: red;
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+        }
+        #navigation .n_img{
+            width: 24px;
+            height: 24px;
+            margin-top: 8px;
+            margin-left:3%;
+        }
+        /*end navigation*/
+        /*start introduce*/
+        .introduce{
+            width: 94%;
+            margin:0 auto;
+            padding-top: 40px;
+        }
+        .introduce .i_title{
+            text-align: center;
+        }
+        .introduce .i_img{
+            width:100%;
+        }
+        .introduce .i_txt{
+            font-size: 14px;
+        }
+        /*end introduce*/
+    </style>
+</head>
+<body>
+<!--navigation start-->
+<div id="navigation">
+    <img src="../../assets/i/t-1/back.png" alt="" class="n_img" onclick="back()">
+</div>
+<!--edn navigation-->
+<div class="introduce">
+    <h1 class="i_title">服务宗旨口号</h1>
+    <img src="../../assets/i/t-1/introduce.jpg" alt="" class="i_img">
+    <p class="i_txt"> 尊重客户，理解客户，持续提供超越客户期望的产品与服务，做客户们永远的伙伴。这是我们一直坚持和倡导的服务理念。</p>
+    <p class="i_txt"> 一、每走一步，首先想到的是顾客 在企业由卖方市场转变为买方市场后，消费者的消费观念产生了变化。面对众多的商品（或服务），消费者更乐于接受质量好的商品（或服务）。这里的质量不仅仅指产品的内在质量，还包括产品的包装质量、服务质量等一系列因素。因此必须全面地、最大限度地满足消费者的需求。</p>
+    <p class="i_txt"> 二、应站在顾客（或消费者）的立场，而不是站在公司的立场上去研究、设计和改进服务。 </p>
+    <p class="i_txt"> 三、完善服务系统，加强售前、售中、售后服务，对顾客在使用商品中出现的各种问题及时帮助解决，使顾客感到极大方便。 </p>
+    <p class="i_txt"> 四、高度重视顾客意见，让客户参与决策，把处理客户的意见作为使顾客满意的重要一环。 </p>
+    </div>
+</body>
+<script>
+    function back() {
+        history.back();
+    }
+</script>
+</html>

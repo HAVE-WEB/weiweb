@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>新闻详情</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            height: 100%;
+        }
+        /*start navigation*/
+        #navigation{
+            height: 40px;
+            background: red;
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+        }
+        #navigation .n_img{
+            width: 24px;
+            height: 24px;
+            margin-top: 8px;
+            margin-left:3%;
+        }
+        /*end navigation*/
+        /*start introduce*/
+        .introduce{
+            width: 94%;
+            margin:0 auto;
+            padding-top: 40px;
+        }
+        .introduce .i_title{
+            text-align: center;
+        }
+        .introduce .i_img{
+            width:100%;
+        }
+        .introduce .i_txt{
+            font-size: 14px;
+        }
+        /*end introduce*/
+    </style>
+</head>
+<body>
+<!--navigation start-->
+<div id="navigation">
+    <img src="../../assets/i/t-1/back.png" alt="" class="n_img" onclick="back()">
+</div>
+<!--edn navigation-->
+<div class="introduce">
+    <h1 class="i_title">好酒的酿造过程</h1>
+    <img src="../../assets/i/t-1/introduce.jpg" alt="" class="i_img">
+    <p class="i_txt">选料</p>
+    <p class="i_txt">粮为酒之肉，一般是将高梁、玉米、小麦、大米、糯米、大麦、荞麦、青稞等粮食和豆类等(不包括薯类与果蔬类)作为原料，要求作物的颗粒均匀饱满、新鲜、无虫蛀、无霉变、干燥适宜、无泥沙、无异杂味、无其它杂物。</p>
+    <p class="i_txt">制曲</p>
+    <p class="i_txt">曲为酒之骨，制曲是酿酒过程中重要的环节，纵观世界各国用谷物原料酿酒的历史，可发现有两大类， 一类是以谷物发芽的方式，利用谷物发芽时产生的酶将原料本身糖化成糖份，再用酵母菌将糖份转变成酒精(比如啤酒);另一类是用发霉的谷物，制成酒曲，用酒曲中所含的酶制剂将谷物原料糖化发酵成酒。白酒酿造采用的就是第二种方式，这个过程主要是将淀粉糖化(转化成葡萄糖)。</p>
+    <p class="i_txt">发酵</p>
+    <p class="i_txt">从配料、蒸粮、糖化、发酵、蒸酒等生产过程中都采用固体状态流转而酿制的白酒，才能称为固态发酵白酒。发酵的过程其实就是将上一个阶段生成的糖发酵转化成酒精的过程。</p>
+    <p class="i_txt">蒸馏</p>
+    <p class="i_txt">靠发酵产生的酒精度数其实是很低的，为了提高酒精含量(度数)，一般还要进行蒸馏提纯，主要采用甑桶作容器(半固态法出外)进行缓慢蒸馏，还可采取将黄水、酒尾倒入锅底进行蒸馏等措施。经过蒸馏操作后，得到的原酒度数一般比较高，不同批次的原酒其质量、风格都不相同，需要分批存放。</p>
+    <p class="i_txt">陈酿</p>
+    <p class="i_txt">陈酿也叫老熟，我们说的“酒是陈的香”，就是指经过“陈酿”过程的酒。经过蒸馏的高度原酒只能算半成品，辛辣，不醇和，只有在特定环境中贮存一段时间使其自然老熟，才能使酒体绵软适口，醇厚香浓。贮酒容器最好是在放在陶坛中，更大的贮存容器可用不锈钢等作材质，尽量不采用金属铝质容器。贮酒应采用自然老熟，禁止用催化剂等化学方法催陈。</p>
+    <p class="i_txt">勾兑</p>
+    <p class="i_txt">对，说的就是勾兑，尽管行业内有人为了消费者误解将这一过程称为“勾调”，但需要强调的是，这里说的勾兑和通常意义上大家理解的“三精一水”的勾兑完全是两码事。这里的勾兑是指，允许用不同轮次和不同等级的酒及各种调味酒进行勾调，绝不允许配加混合香酯和非白酒发酵的香味物质。</p>
+    <p class="i_txt">灌装</p>
+    <p class="i_txt">经过勾兑后的成品酒经过检验合格后，方可灌瓶贴标。然后就可以进入市场和消费者见面了。</p>
+
+</div>
+</body>
+<script>
+    function back() {
+        history.back();
+    }
+</script>
+</html>
