@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>模板7</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            color: #666;
+            background-color:rgba(0,0,0,.7) ;
+            height:100%;
+        }
+        /*start top*/
+        #top .t_img{
+            width:100%;
+        }
+        /*end top*/
+
+            /*清除浮动*/
+        .clearFix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: '.';
+            visibility: hidden;
+            clear: both;
+        }
+        /*start catalog*/
+        #catalog{
+            position: fixed;
+            right: 50%;
+            top:0;
+            width: 2px;
+            height:50%;
+            background: rgba(255,255,255,.5);
+        }
+        #catalog .c_relative{
+            position: relative;
+            height:100%;
+        }
+        #catalog .c_relative .c_line{
+            width: 40px;
+            height: 2px;
+            background: rgba(255,255,255,.5);
+            position: absolute;
+        }
+        #catalog .c_relative .c_1 , #catalog .c_relative .c_2 , #catalog .c_relative .c_3{
+            left:0;
+        }
+        #catalog .c_relative .c_4 , #catalog .c_relative .c_5 , #catalog .c_relative .c_6{
+            left: -40px;
+        }
+        #catalog .c_relative .c_1{
+            top: 15%;
+        }
+        #catalog .c_relative .c_2{
+            top: 55%;
+        }
+        #catalog .c_relative .c_3{
+            top: 95%;
+        }
+        #catalog .c_relative .c_4{
+            top: 20%;
+        }
+        #catalog .c_relative .c_5{
+            top: 60%;
+        }
+        /*#catalog .c_relative .c_6{*/
+            /*top: 100%;*/
+        /*}*/
+        #catalog .c_relative .c_item{
+            position: absolute;
+        }
+        /*#catalog .c_relative .i_1 ,  #catalog .c_relative .i_2 ,  #catalog .c_relative .i_3{*/
+            /*left: 40px;*/
+        /*}*/
+        /*#catalog .c_relative .i_4 ,  #catalog .c_relative .i_5 ,  #catalog .c_relative .i_6{*/
+            /*left: -40px;*/
+        /*}*/
+       
+        #catalog .c_relative .c_item .c_lk .c_gap{
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: rgba(255,255,255,.5);
+            padding: 5px;
+        }
+        #catalog .c_relative .c_item .c_lk .c_gap .c_img{
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        #catalog .c_relative .c_item .c_lk .c_txt{
+            display: block;
+            text-align: center;
+            color: #fff;
+        }
+        /*end catalog*/
+        /*start support*/
+        .support{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        /*end support*/
+    </style>
+</head>
+<body>
+<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false}' id="slider">
+    <ul class="am-slides">
+        <li>
+            <img src="../../assets/i/t-5/home-slider/3.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-5/home-slider/2.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-5/home-slider/1.jpg">
+        </li>
+    </ul>
+</div>
+<!--start catalog-->
+<div id="catalog">
+    <div class="c_relative">
+        <div class="c_line c_1"></div>
+        <div class="c_line c_2"></div>
+        <div class="c_line c_3"></div>
+        <div class="c_line c_4"></div>
+        <div class="c_line c_5"></div>
+        <div class="c_line c_6"></div>
+        <div class="c_item i_1">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/company.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">关于我们</span>
+            </a>
+        </div>
+        <div class="c_item i_2">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/secretary.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">联系我们</span>
+            </a>
+        </div>
+        <div class="c_item i_3">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/news.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">新闻列表</span>
+            </a>
+        </div>
+        <div class="c_item i_4">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/heart.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">公司服务</span>
+            </a>
+        </div>
+        <div class="c_item i_5">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/product.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">公司产品</span>
+            </a>
+        </div>
+        <div class="c_item i_6">
+            <a href="" class="c_lk">
+                <div class="c_gap">
+                    <img src="../../assets/i/t-7/icon/notice.png" alt="" class="c_img">
+                </div>
+                <span class="c_txt">公告</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--end catalog-->
+<!--start support-->
+<!--start support-->
+<div class="support">
+    Copyright &copy;<a href="" class="s_lk">上海玖达</a>
+</div>
+<!--end support-->
+</body>
+<script>
+    $(function () {
+//        最后一个line的top
+        $('#catalog .c_relative .c_6').css('top',$('#catalog .c_relative').height()-2);
+
+        var lineTop ='';
+        var index = 0;
+        $('#catalog .c_line').each(function () {
+            index++;
+            var className = $(this)[0].className;
+            var top = $(this).css('top');
+            var topInt  = top.substr(0,top.length-2);
+            if(index == $('#catalog .c_line').length){
+                lineTop+= topInt;
+            }else{
+                lineTop+= topInt + ',';
+            }
+        });
+        $('#catalog .c_item').each(function (i) {
+            var className = $(this)[0].className;
+            var lineArr = lineTop.split(',');
+            var gapHeight = $('#catalog .c_gap').outerHeight();
+            var gapWidth = $('#catalog .c_gap').outerWidth();
+            var lineWidth = $('#catalog .c_line').width();
+            var top = 0;
+            var left  =0;
+            if(className.indexOf('1')>0){
+               top = parseInt(lineArr[0]) - gapHeight/2;
+               left = lineWidth;
+            }else if(className.indexOf('2')>0){
+                top = parseInt(lineArr[1]) - gapHeight/2;
+                left = lineWidth;
+            }else if(className.indexOf('3')>0){
+                top = parseInt(lineArr[2]) - gapHeight/2;
+                left = lineWidth;
+            }else if(className.indexOf('4')>0){
+                top = parseInt(lineArr[3]) - gapHeight/2;
+                left = -(lineWidth+gapWidth);
+            }else if(className.indexOf('5')>0){
+                top = parseInt(lineArr[4]) - gapHeight/2;
+                left = -(lineWidth+gapWidth);
+            }else if(className.indexOf('6')>0){
+                top = parseInt(lineArr[5]) - gapHeight/2;
+                left = -(lineWidth+gapWidth);
+            }
+            $(this).css({
+                'top':top,
+                'left':left
+            });
+        });
+
+
+        $('#slider').find('img').height(screen.height);
+    });
+</script>
+</html>

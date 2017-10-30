@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>商品详情表</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            height: 100%;
+        }
+        /*start navigation*/
+        #navigation{
+            height: 40px;
+            background: red;
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            z-index: 1;
+        }
+        #navigation .n_img{
+            width: 24px;
+            height: 24px;
+            margin-top: 8px;
+            margin-left:3%;
+        }
+        /*end navigation*/
+        /*start name*/
+        .name .n_txt{
+            font-size: 16px;
+            font-weight:bold;
+            margin-left: 10px;
+        }
+        /*end name*/
+        /*start info*/
+        .info{
+            width: 100%;
+            height: 60px;
+        }
+        .info .i_parameter{
+            float: left;
+            width:50%;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        /*end info*/
+        /*start recommend*/
+        .recommend {
+
+        }
+        .recommend .r_title{
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .recommend .r_list{
+            height: 120px;
+        }
+        .recommend .r_list .r_item{
+            float:left;
+            width:33.3%;
+
+        }
+        .recommend .r_list .r_item .r_lk{
+            display: block;
+            text-align: center;
+            border:1px solid #ccc;
+            margin: 0px 6px;
+            color: #000;
+        }
+        .recommend .r_list .r_item .r_lk .r_img{
+            width: 60px;
+            height: 60px;
+        }
+        .recommend .r_list .r_item .r_lk .r_txt{
+            display: block;
+            line-height: 30px;
+        }
+        /*end recommend*/
+    </style>
+</head>
+<body>
+<!--start navigation-->
+<div id="navigation">
+    <img src="../../assets/i/t-1/back.png" alt="" class="n_img" onclick="back()">
+</div>
+<!--end navigation-->
+<!--start slider-->
+<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{}' style="margin-top: 40px">
+    <ul class="am-slides">
+        <li>
+            <img src="../../assets/i/t-1/product-detail/slider/IMG_1497.JPG">
+        </li>
+        <li>
+            <img src="../../assets/i/t-1/product-detail/slider/IMG_1498.JPG">
+
+        </li>
+        <li>
+            <img src="../../assets/i/t-1/product-detail/slider/IMG_1499.JPG">
+        </li>
+        <li>
+            <img src="../../assets/i/t-1/product-detail/slider/IMG_1500.JPG">
+        </li>
+    </ul>
+</div>
+<!--end slider-->
+<!--start name-->
+<div class="name">
+    <span class="n_txt">神韵小北京酒</span>
+
+</div>
+<!--end name-->
+<!--start info-->
+<div class="info">
+   <div class="i_parameter">
+       <span class="i_name">
+           品牌：
+       </span>
+       <span class="i_value">
+           神韵
+       </span>
+   </div>
+    <div class="i_parameter">
+       <span class="i_name">
+           净含量：
+       </span>
+        <span class="i_value">
+           500ml
+       </span>
+    </div>
+    <div class="i_parameter">
+       <span class="i_name">
+           酒精度：
+       </span>
+        <span class="i_value">
+           52%vol
+       </span>
+    </div>
+    <div class="i_parameter">
+       <span class="i_name">
+           香型：
+       </span>
+        <span class="i_value">
+           浓香型
+       </span>
+    </div>
+</div>
+<!--end info-->
+<!--start explain-->
+<div class="am-panel-group" id="accordion">
+    <div class="am-panel am-panel-default">
+        <div class="am-panel-hd">
+            <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-3'}">产品说明</h4>
+        </div>
+        <div id="do-not-say-3" class="am-panel-collapse am-collapse am-in">
+            <div class="am-panel-bd">
+                每个人都有一道伤口， 或深或浅，盖上布，以为不存在。
+                我把最殷红的鲜血涂在那里。
+                你不懂我，我不怪你。
+            </div>
+        </div>
+    </div>
+</div>
+<!--end explain-->
+<!--start recommend-->
+<div class="recommend">
+    <h3 class="r_title">相关推荐</h3>
+    <div class="r_list">
+        <div class="r_item">
+            <a href="" class="r_lk">
+                <img src="../../assets/i/t-1/product-detail/slider/IMG_1499.JPG" alt="" class="r_img">
+                <span class="r_txt">神韵小北京158</span>
+            </a>
+        </div>
+        <div class="r_item">
+            <a href="" class="r_lk">
+                <img src="../../assets/i/t-1/product-detail/slider/IMG_1499.JPG" alt="" class="r_img">
+                <span class="r_txt">神韵小北京158</span>
+            </a>
+        </div>
+        <div class="r_item">
+            <a href="" class="r_lk">
+                <img src="../../assets/i/t-1/product-detail/slider/IMG_1499.JPG" alt="" class="r_img">
+                <span class="r_txt">神韵小北京158</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--end recommend-->
+</body>
+<script>
+    function back() {
+        history.back();
+    }
+</script>
+</html>

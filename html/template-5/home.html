@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>模板5</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- Amaze UI CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            height:100%;
+        }
+        body{
+            font-size: 12px;
+            font-family:"微软雅黑";
+            color: #666;
+            background-color:rgba(0,0,0,.7) ;
+            height:100%;
+        }
+        /*start top*/
+        #top .t_img{
+            width:100%;
+        }
+        /*end top*/
+
+            /*清除浮动*/
+        .clearFix:after{
+            display: block;
+            width: 0;
+            height:0;
+            content: '.';
+            visibility: hidden;
+            clear: both;
+        }
+        /*start catalog*/
+        #catalog{
+            position: fixed;
+            right: 0;
+            top: 50px;
+
+            margin-right: 10px;
+        }
+        #catalog .c_ul{
+            list-style:none;
+        }
+        #catalog .c_ul .c_item{
+            margin-top: 8px;
+        }
+        #catalog .c_ul .c_item .c_lk{
+            display: block;
+            color: #fff;
+            font-size: 16px;
+            border:1px solid #fff;
+            padding: 2px 18px;
+            letter-spacing: 2px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /*end catalog*/
+        /*start support*/
+        .support{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        /*end support*/
+    </style>
+</head>
+<body>
+<div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false}' id="slider">
+    <ul class="am-slides">
+        <li>
+            <img src="../../assets/i/t-5/home-slider/1.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-5/home-slider/2.jpg">
+        </li>
+        <li>
+            <img src="../../assets/i/t-5/home-slider/3.jpg">
+        </li>
+    </ul>
+</div>
+<!--start catalog-->
+<div id="catalog">
+    <ul class="c_ul">
+        <li class="c_item"><a href="introduce.html" class="c_lk">关于我们</a></li>
+        <li class="c_item"><a href="tel:18888888888" class="c_lk">联系我们</a></li>
+        <li class="c_item"><a href="news.html" class="c_lk">新闻列表</a></li>
+        <li class="c_item"><a href="service.html" class="c_lk">公司服务</a></li>
+        <li class="c_item"><a href="product.html" class="c_lk">公司产品</a></li>
+        <li class="c_item"><a href="notice.html" class="c_lk">公告</a></li>
+    </ul>
+</div>
+<!--end catalog-->
+<!--start support-->
+<div class="support">
+    Copyright &copy;<a href="" class="s_lk">上海玖达</a>
+</div>
+<!--end support-->
+</body>
+<script>
+    $(function () {
+            $('#slider').find('img').height(screen.height);
+    });
+</script>
+</html>
