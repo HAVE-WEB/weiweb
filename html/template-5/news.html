@@ -32,7 +32,8 @@
 
     <!-- Amaze UI CSS -->
     <link rel="stylesheet" type="text/css" href="../../assets/css/amazeui.min.css">
-    <script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/jd.css">
+
     <style>
         *{
             padding:0;
@@ -49,11 +50,12 @@
         /*start navigation*/
         #navigation{
             height: 40px;
-            background: red;
+            background: #3B3B3D;
             position: fixed;
             top:0;
             left:0;
             width: 100%;
+            z-index: 1;
         }
         #navigation .n_img{
             width: 24px;
@@ -72,25 +74,46 @@
         /*end history*/
         /*start product*/
         .product{
-            padding-bottom: 5px;
             padding-top: 5px;
-            background: #ccc;
         }
         .product .p_item{
             background-color: #fff;
-            margin-bottom:5px;
-        }
-        .product .p_item.p_last{
-            margin-bottom:0;
+            border-bottom: 1px solid #ccc;
         }
         .product .p_item .p_lk{
             display: block;
             color: #000;
+            padding:10px;
+            height: 80px;
+        }
+        .product .p_item .p_lk .p_left{
+            float: left;
         }
         .product .p_item .p_lk .p_img{
-            width: 50px;
-            height: 50px;
-            margin: 5px;
+            width: 80px;
+            height: 60px;
+            margin-right: 5px;
+        }
+        .product .p_item .p_lk .p_right{
+            float: left;
+            position: relative;
+        }
+        .product .p_item .p_lk .p_right .p_title{
+            font-size: 16px;
+            line-height: 18px;
+        }
+        .product .p_item .p_lk .p_right .p_info{
+            position: absolute;
+            left: 0;
+            bottom:0;
+            width:100%;
+            color: #ccc;
+        }
+        .product .p_item .p_lk .p_right .p_info .p_zan{
+            float: left;
+        }
+        .product .p_item .p_lk .p_right .p_info .p_time{
+            float: right;
         }
         /*end product*/
     </style>
@@ -103,41 +126,237 @@
 <!--end navigation-->
 <!--start history-->
 <div class="history">
-    <img src="../../assets/i/t-1/introduce.jpg" alt="" class="h_img">
+    <img src="../../assets/i/t-5/introduce-bg.jpg" alt="" class="h_img">
 </div>
 <!--end history-->
 <!--start produce-->
 <div class="product">
     <div class="p_item">
-        <a href="news-detail.html" class="p_lk">
-            <img src="../../assets/i/t-1/product-list/IMG_1.JPG" alt="" class="p_img">
-            <span class="p_txt">什么是好酒？</span>
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/HF-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">11月上市，全新哈弗H6将推1.5T直喷车型</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
         </a>
     </div>
     <div class="p_item">
-        <a href="news-detail.html" class="p_lk">
-            <img src="../../assets/i/t-1/product-list/IMG_1.JPG" alt="" class="p_img">
-            <span class="p_txt">怎么判别酒的好坏</span>
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">7款配置 北汽幻速S7将于广州车站上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
         </a>
     </div>
     <div class="p_item">
-        <a href="news-detail.html" class="p_lk">
-            <img src="../../assets/i/t-1/product-list/IMG_1.JPG" alt="" class="p_img">
-            <span class="p_txt">酒的品种</span>
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/DZHST-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">售价13.18-21.88万元 2018款速腾正式上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
         </a>
     </div>
-    <div class="p_item p_last">
-        <a href="news-detail.html" class="p_lk">
-            <img src="../../assets/i/t-1/product-list/IMG_1.JPG" alt="" class="p_img">
-            <span class="p_txt ">好酒的酿造过程</span>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">3款电动车 东风雷诺2022年前推出9款新车</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
         </a>
+        <!--<a href="news-detail.html" class="p_lk">-->
+            <!--<img src="../../assets/i/t-5/news/DFLN-1.jpg" alt="" class="p_img">-->
+            <!--<span class="p_txt ">3款电动车 东风雷诺2022年前推出9款新车</span>-->
+        <!--</a>-->
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/HF-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">11月上市，全新哈弗H6将推1.5T直喷车型</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">7款配置 北汽幻速S7将于广州车站上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/DZHST-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">售价13.18-21.88万元 2018款速腾正式上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">3款电动车 东风雷诺2022年前推出9款新车</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+        <!--<a href="news-detail.html" class="p_lk">-->
+        <!--<img src="../../assets/i/t-5/news/DFLN-1.jpg" alt="" class="p_img">-->
+        <!--<span class="p_txt ">3款电动车 东风雷诺2022年前推出9款新车</span>-->
+        <!--</a>-->
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/HF-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">11月上市，全新哈弗H6将推1.5T直喷车型</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">7款配置 北汽幻速S7将于广州车站上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/DZHST-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">售价13.18-21.88万元 2018款速腾正式上市</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="p_item">
+        <a href="news-detail.html" class="p_lk clearFix">
+            <div class="p_left">
+                <img src="../../assets/i/t-5/news/BQHY-1.JPG" alt="" class="p_img">
+            </div>
+            <div class="p_right">
+                <div class="p_title">3款电动车 东风雷诺2022年前推出9款新车</div>
+                <div class="p_info clearFix">
+                    <div class="p_zan">
+                        <span class="p_num">14</span><span class="p_txt">赞</span>
+                    </div>
+                    <div class="p_time">2017-10-31</div>
+                </div>
+            </div>
+        </a>
+        <!--<a href="news-detail.html" class="p_lk">-->
+        <!--<img src="../../assets/i/t-5/news/DFLN-1.jpg" alt="" class="p_img">-->
+        <!--<span class="p_txt ">3款电动车 东风雷诺2022年前推出9款新车</span>-->
+        <!--</a>-->
     </div>
 </div>
 <!--end produce-->
 </body>
+<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/js/amazeui.min.js"></script>
 <script>
     function back() {
         history.back();
     }
+    $(function () {
+        var w = $('.product .p_lk').width();
+        var h =  $('.product .p_lk').height();
+        var wL = $('.product .p_left').outerWidth();
+        $('.product .p_right').outerHeight(h);
+        $('.product .p_right').outerWidth(w-wL);
+    });
+    //点击列表
+    $('.product .p_item').click(function () {
+        var title = $(this).find('.p_title').html();
+        var time = $(this).find('.p_time').html();
+        sessionStorage.setItem('title',title);
+        sessionStorage.setItem('time',time);
+    })
 </script>
 </html>
